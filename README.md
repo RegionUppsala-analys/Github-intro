@@ -157,7 +157,7 @@ När de röda raderna är borta går så ska det gå att köra push!
 
 - Commit ofta: Små, tydliga commits gör det lättare att felsöka
 
-- Branching: Skapa en branch för nya funktioner eller experiment git checkout -b ny-funktion
+- Branching: Skapa en branch för nya funktioner eller experiment git checkout -b ny-funktion, eller små förändringar av koden som du först vill testa innan det går ut i "produktion".
 
 - Pull innan push: Håll ditt repo uppdaterat med git pull
 
