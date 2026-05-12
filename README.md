@@ -229,5 +229,36 @@ Nu kan du använda Git precis som ovan för att versionhantera din Quarto-webbpl
 
 
 
+# 7. Ta bort .git länk för att flytta ett project till ett nytt repo
+
+Om du har ett repo som du vill flytta till ett nytt, tex för att du kört på privat användare men nu vill ladda upp här. 
+Börja med att skapa ett nytt repo på git och kör sedasn koden neda:
+
+```{r}
+# Ta bort .git länk för att flytta till nytt repo
+# Funkar inte om projektet är öppet i Rstudio
+# i cmd/kommandotolken skriv:
+
+cd "C:/user/docs/länk_till_projectet"
+
+rmdir /s /q .git
 
 
+###############################
+# Öppna projektet i R och kör
+# ny connect genom R-terminal
+###############################
+
+git init
+
+git remote add origin "github…."
+
+# upload files
+
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin 
+
+
+```
